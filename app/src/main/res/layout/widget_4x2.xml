@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_4x2_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_widget_card"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <!-- Left section: Red Record CTA -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingEnd="16dp">
+
+        <FrameLayout
+            android:id="@+id/widget_4x2_btn_record"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/bg_widget_record_btn">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_widget_mic"
+                android:contentDescription="Record Voice Note" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="RECORD"
+            android:textColor="#D71921"
+            android:textSize="10sp"
+            android:letterSpacing="0.15"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Vertical separator line -->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#222222"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Right section: Info preview & Quick Actions -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/widget_4x2_status_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ESSENCE // SPACE"
+            android:textColor="#888888"
+            android:textSize="11sp"
+            android:letterSpacing="0.2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/widget_4x2_status_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Tap to capture thought"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <FrameLayout
+                android:id="@+id/widget_4x2_btn_note"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/bg_widget_small_btn">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_widget_note"
+                    android:contentDescription="New Note" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/widget_4x2_btn_task"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/bg_widget_small_btn">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_widget_task"
+                    android:contentDescription="New Task" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

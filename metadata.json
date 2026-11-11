@@ -1,0 +1,6 @@
+{
+  "name": "Essence",
+  "description": "Private notes, voice-notes and to-do app styled like Nothing OS with on-device transcription and OEM hardening.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
